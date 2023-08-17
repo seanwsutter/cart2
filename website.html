@@ -1,33 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML CSS Review</title>
-    <style>
-      
-      .red-button {
-        background-color: red;
-        color: white;
-        border: none;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+  <!-- style.css file not linked -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    .redButton {
+      background-color: red;
+      color: white;
+      border: none;
+    }
+    .yellowButton {
+      background-color: yellow;
+    }
+  </style>
+</head>
 
-      .yellow-button {
-        background-color: yellow;
-      }
-    </style>
-  </head>
-  <body>
-   
-    <button title="Good job!" class="red-button" onclick="
-      alert('Good job!');
-    ">
-      hello
-    </button>
-
-    <p>
-      paragraph of <button class="yellow-button">hello</button> text
-    </p>
-
-    <script src="main.js"></script>
+<body>
+  
+  <button onclick = "console.log(`Cart quantity: ${cartQuantity}`);">
+    Show Quantity </button>
+  
+  <button onclick = "cartQuantity++; console.log(`Cart quantity: ${cartQuantity}`);">
+    Add to Cart </button>
+  
+  <button onclick= "cartQuantity += 2; console.log(`Cart quantity: ${cartQuantity}`);">
+    +2 </button>
+  
+  <button onclick= "cartQuantity = cartQuantity + 3; console.log(`Cart quantity: ${cartQuantity}`);">
+    +3 </button>
+  
+  <button onclick= "cartQuantity = 0; console.log('Cart was reset.'); console.log(`Cart quantity: ${cartQuantity}`)">
+    Reset Cart </button>
+  
+  <button title="Good job!" class="redButton" onclick="alert('Good job!');">hello</button>
     
-  </body>
+  <p>paragraph of<button class="yellowButton">hello</button>text</p>
+
+</body>
+
+<script>
+  
+  let cartQuantity = 0;
+  let variable1 = 3; console.log(variable1);
+  variable1 = 6; console.log(variable1);
+  variable1 = variable1 + 3; console.log(variable1);
+  const variable2 = 3; // const means constant value, cannot be redefined
+  var variable3 = 3; // let > var 
+
+</script>
+<!-- js file not linked <script src="main.js"></script> -->
+</body>
 </html>
+
+
+
+
+   
+    
+    

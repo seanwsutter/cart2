@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>comments</title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+ 
+
+  <script>
+    
+    let variable1 = 3; console.log(variable1);
+    variable1 = 6; console.log(variable1);
+    variable1 = variable1 + 3; console.log(variable1);
+    const variable2 = 3; // const means constant value, cannot be redefined
+    var variable3 = 3; // let > var 
+    
+    // true
+    // false
+    
+  /* boolean comparison operaters 
+      
+    < greater than, < less than
+    >= greater than than or equal to
+    <= less than or equal to
+    == equal to !== not equal to
+    
+  console.log(5 == '5.00');
+  == will try to comparare both values into the same type (value to string)
+  */
+    
+  /* if statemwents */
+  if (false) {
+    console.log('hello');
+  } else {
+    console.log('else');
+  }
+    
+  if (30 >= 16) { // boolean value is true (30 >= 15)
+    console.log('you are old');
+  }
+ 
+  // && AND operater, checks if left AND right side are true
+    console.log(true && true); 
+    console.log(true && false);
+  // check if number 0.2 is between 0 and 1/3
+    console.log(0.2 >= 0 && 0.2 < 1/3);
+
+  // || OR operater, checks if left OR right side is true
+    console.log(true || false);
+
+  // ! NOT operater, 1 boolean value and flips it to opposite,
+    console.log(!true);
+
+  // TRUTHY AND FALSY , FALSY = false 0 '' NaN undefined null
+    if (0) {
+      console.log('truthy');
+    }
+
+    const cartQuantity = 5;
+    
+    if (cartQuantity > 0) {
+      console.log('cart has products');
+    }
+
+    // TERNARY operator
+      
+   </script>
+
+
+ <!-- leftovers -->
+  <!-- <button onclick=" // button onclick makes elements interactive with js
+    const randomNumber = Math.random();
+      // console.log(Math.random()); // generates 0101001
+
+      if (randomNumber >= 0 randomNumber <= 1
+      /3) {} 
+      
+      // two comparisons both true use logical operaters
+
+    ">Rock</button> -->
+
+    <!-- <button onclick="
+    const randomNumber = Math.random(); 
+    // const computerMove = '';
+    let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber < 
+      1 / 3) {
+        // console.log('rock');
+        // const computerMove = 'rock';
+        computerMove = 'rock';
+      } else if (randomNumber >= 1 / 3 && // 2nd branch
+      randomNumber < 2 / 3 ) {
+        // const computerMove = 'paper';
+        // console.log('paper');
+        computerMove = 'paper';
+      } else if (randomNumber >= 2 / 3 && // 3rd branch
+      randomNumber < 1) {
+        // const computerMove = 'scissors';
+        // console.log('scissors');
+        computerMove = 'scissors';
+      }
+      // log computerMove variable
+      console.log(computerMove);
+    ">Rock</button>  -->
+
+ </body>
+</html>

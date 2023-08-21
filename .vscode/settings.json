@@ -1,4 +1,5 @@
 {
   "editor.renderControlCharacters": false,
-  "php.validate.executablePath": ""
+  "php.validate.executablePath": "",
+  "livePreview.defaultPreviewPath": "/rock-paper-scissors.html"
 }

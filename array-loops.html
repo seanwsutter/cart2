@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and loops</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const myArray = [1, 5, 10];
+      console.log(myArray);
+      console.log(myArray[0]);
+
+      [1, 'diaper', true, {status: 'full'}, [1, 2]]
+
+      console.log(typeof [1, 2]);
+      console.log(Array.isArray([1,2]));  
+      
+      console.log('array length:', myArray.length);
+
+      myArray.push(100)
+      console.log('pushed 100', myArray);
+      myArray.splice(0, 1);
+      console.log(myArray);
+      */
+      
+      
+      /* 
+      // while loop 
+      
+      loopVariable = i
+      while (loopCondition) {
+        loopBody/incrementstep
+      }
+      */
+      let i = 1;
+      while (i <= 5) { 
+        i = i + 1; 
+        i += 1; 
+        i++;
+      }
+      // ex, generate random number until it is greater than 0.5
+      let randomNumber = 0;
+      while (randomNumber < 0.5) {
+        randomNumber = Math.random();
+      }
+      console.log(randomNumber);
+      
+      // for loop 
+      /* 
+      for (loopVariable = i, loopCondition, incrementstep) {
+      }
+      */
+      for (let i=1; i<=5; i++) {
+        console.log(i);
+      }
+      
+     
+      // loop through an array, go through each value, do something with each value
+     const toDoList = ['make dinner', 'change diaper', 'fart'];
+     for (let i = 0; i <= toDoList.length - 1; i++) { // index < toDoList.length
+      const value = toDoList[i];
+      console.log(value);
+     }
+     // accumulator pattern, calculate total of numbers in array
+     // create variable to store result, loop through array and update result
+     const nums = [1, 1, 5];
+     let total = 0;
+     for (let i=0; i<nums.length; i++) {
+      const num = nums[i];
+      total += num; // total = total + num;
+     }
+     console.log(total);
+     // create copy of array with each number doubled
+     const numsDoub = [];
+     for (let i=0; i<nums.length; i++) {
+      const num = nums[i];
+      numsDoub.push(num * 2);
+     }
+     console.log(numsDoub);
+
+
+
+      
+      
+      
+    </script>
+  </body>
+</html>

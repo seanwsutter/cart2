@@ -18,17 +18,9 @@
     <button onclick ="
       score.wins = 0; score.losses = 0; score.ties = 0;
       localStorage.removeItem('score');
-    ">Reset Score</button>
+    ">Reset Score</button>  
       
   <script>
-    /* algorithm 
-     click a button
-     computer randomly selects move
-     compare moves to get result
-     update score
-     display result and score in poopup
-    */
-    
     let score = JSON.parse(localStorage.getItem('score')) || {
       wins: 0,
       losses: 0,
@@ -38,19 +30,10 @@
     JSON.parse(localStorage.getItem('score'));
     console.log(JSON.parse(localStorage.getItem('score')));
 
-    /* local storage  
+    /*  
   
   use score from local storage instead of resetings, JSON.parse()
      
-    const score = {
-      wins: 0,
-      losses: 0,
-      ties: 0
-    };
-
-  JSON.parse(localStorage.getItem('score'));
-  console.log(JSON.parse(localStorage.getItem('score')));
-
   remove score from local storage
   if data doesnt exist in localStorage = null, if score is = nul give default value
     
